@@ -1,0 +1,78 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: ask name
+  steps:
+  - intent: ask_name
+  - action: utter_askname
+  - action: utter_did_that_help
+
+- story: ask visa
+  steps:
+  - intent: ask_visa
+  - action: utter_visa
+  - action: utter_did_that_help
+
+- story: ask exam results
+  steps:
+  - intent: ask_exam_results
+  - action: utter_exam_results
+  - action: utter_did_that_help
+  
+- story: ask pdt
+  steps:
+  - intent: ask_pdt
+  - action: utter_pdt
+  - action: utter_did_that_help
+
+- story: ask for a real person
+  steps:
+  - intent: ask_for_real_person
+  - action: utter_ask_for_real_person
+  - action: utter_did_that_help
+
+- story: ask financial problems
+  steps:
+  - intent: ask_financial_difficulties
+  - action: utter_financial_issue
+  - action: utter_did_that_help
+
+- story: ask financial problems
+  steps:
+  - intent: ask_how_to_return_booksandlaptop
+  - action: utter_how_to_return_booksandlaptop
+  - action: utter_did_that_help
+
+- story: ask for extension
+  steps:
+  - intent: ask_for_extension
+  - action: utter_extension
+  - action: utter_did_that_help

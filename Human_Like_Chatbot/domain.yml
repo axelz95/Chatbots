@@ -1,0 +1,109 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_name
+  - ask_human
+  - ask_visa
+  - ask_exam_results
+  - ask_pdt
+  - ask_for_real_person
+  - ask_financial_difficulties
+  - ask_how_to_return_booksandlaptop
+  - ask_for_extension
+
+responses:
+  utter_greet:
+  - text: "Hello there! 😃 My name is Nilo and I am here to support you in the environment of Edinburgh Napier University.\
+           \ Even though I am not a human, I will do my best to help you. Please feel free to ask me any\
+           \ questions regarding Edinburgh Napier University and questions you would actually ask a PDT.\
+           \ I will try my best to answer the questions to your satisfaction 😊."
+
+  utter_cheer_up:
+  - text: "Oh, I am so sorry to hear that. I know sometimes it feels like everything is too much. But don't worry I will\
+          \ try my best to help you 😊. At Napier we have several services that can help you.\n\n
+            1.) To start with, you should visit our webpage to learn more about the topic of well-being and inclusion. You can\
+          \ reach the webpage with this link: https://my.napier.ac.uk/wellbeing-support-and-inclusion \n\n
+          \ 2.) Another possibility is to contact our University Health advisory service through  the following email: 'mentalhealthadviser@napier.ac.uk'\n\n
+          \ 3.) In addition, I recommend you to speak to your GP. If you don't have a GP already you can find a GP on this webpage:\
+          \ https://www.nhslothian.scot.nhs.uk/Services/GPs/Pages/PatientRegistration.aspx."
+
+  utter_out_of_scope:
+  - text: "Im so sorry I cant aswer to that question because I dont have enough training data at the moment. Please speak to a real PDT."
+
+
+  utter_did_that_help:
+  - text: "Did that help you? Don't hesitate to ask me more questions 😊."
+
+  utter_happy:
+  - text: "Great, carry on! 😃"
+
+  utter_goodbye:
+  - text: "Goodbye, have a great day! 😃"
+
+  utter_iamabot:
+  - text: "Yes, your are right I am a Bot 😃. I running on the open-source Framework Rasa.
+           In this particular case im trying to behave human-like to give the user a sense of 
+           human while interacting with a technology. "
+  
+  utter_askname:
+  - text: "My name is Nilo and I am here to support you in the environment of Edinburgh Napier University.\
+           \ Even though I am not a human, I will do my best to help you. Please feel free to ask me any\
+           \ questions regarding Napier University and questions You would actually ask a PDT.\
+           \ I try my best to answer the questions to your satisfaction 😊."
+
+  utter_visa:
+  - text: "I can help you with Visa related quesions 😃. Just look on this webpage:
+            https://my.napier.ac.uk/international-students \n\n
+            You will find lots of information there, such as funding, student route visas or
+            the immigration status. "
+
+  utter_exam_results:
+  - text: "I can provide you help with your exam results 😃. You can access your exam results either through : \n\n
+           1.) The Edinburgh Napier University app: https://my.napier.ac.uk/it-support/how-do-i/studying-off-campus/edinburgh-napier-university-app \n\n
+           2.) Your personal Napier Account: https://my.napier.ac.uk/ \n\n
+           You can find the date that the exam results were released on: https://my.napier.ac.uk/your-studies/exams"
+
+  utter_pdt:
+  - text: "Thats a good question! A Personal Development Tutor (PDT) is assigned to you during the first few weeks at Edinburgh Napier
+           and will be  your first point of contact for any academic or personal issues you may experience throughout your time at university.
+           You can find more information trough the following link: https://my.napier.ac.uk/your-studies/your-personal-development-tutor"
+
+  utter_ask_for_real_person:
+  - text: "I am sorry to tell you, that you cant speak to a real person immediately 😔. However, I can provide you a list of all our staff: https://www.napier.ac.uk/people \n\n
+            Just search for the person you are looking for and you will find their email and telephon number. Don't hesitate to give them a call 😊."           
+
+  utter_financial_issue:
+  - text: "I am so sorry to hear that you have financial issues 😔. At Napier we have several services that can provide you help.\n\n
+           1.) First you should visit the money page of My Napier: https://my.napier.ac.uk/money were you can find lots of information. \n\n
+           2.) If you have any money related enquiries please contact the following email: studentfunding@napier.ac.uk \n\n
+           3.) In case you have urgent financial difficulties or you require dept advice please contact our ENSA Adcive Service: ensa.advice@napier.ac.uk"
+
+  utter_how_to_return_booksandlaptop:
+  - text: "There are many ways to return your books and laptops to the library. But first things first, you can see the library opening hours on this webpage:
+            https://my.napier.ac.uk/library/about-the-library/opening-hours. You can return books to any of our libraries but you must return your laptop to 
+            the campus which it was borrowed from. \n\n
+            You can return books in all student accommodation using the return boxes. Please be aware that books returned to student accommodation may 
+            take up to a week to be removed from your Library record. \n\n
+            You can also return your books via post but please don't post laptops 😊. I will send you the adresses of our librarys in the following: \n\n
+            Craiglockhart Library, Edinburgh Napier University, 219 Colinton Road, Edinburgh, EH14 1DJ \n\n
+            Merchiston Library, Edinburgh Napier University, 10 Colinton Road, Edinburgh, EH10 5DT \n\n
+            Sighthill Learning Resource Centre, Edinburgh Napier University, 9 Sighthill Court, Edinburgh, EH11 4BN"
+      
+  utter_extension:
+  - text: "I know studying can be very exhausting and time consuming. But do not worry you have several ways to solve the problem 😊. \n\n
+           1.) Your module leader can give you a 10 day extension. To get this extension you have to fill in the RE1 form which you can find on the following website:
+            https://my.napier.ac.uk/your-studies/academic-issues/extenuating-circumstances \n\n
+            2.) If you think 10 days may not be enough you can apply to defer your assessments. This means your assessment will be either deferred to the following trimester
+            or the summer assessment period. To apply for a deferral you have to fill in the DE1 form which you can find on the following website:
+            https://my.napier.ac.uk/your-studies/academic-issues/extenuating-circumstances" 
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
